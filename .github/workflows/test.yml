@@ -37,10 +37,3 @@ jobs:
           go test -v -race -cover './...' -coverprofile=coverage.out 
           go tool cover -func=coverage.out
 
-      - uses: sonarsource/sonarqube-scan-action@v2
-        name: Run SonarQube scan
-        if: success() && github.event_name == 'push' # Run only on master/main branch push
-        timeout-minutes: 10
-        env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          SONAR_HOST_URL: https://sonarqube.staging.aspireapp.com
