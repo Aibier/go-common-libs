@@ -55,7 +55,7 @@ func main() {
 }
 ```
 
-![Test Case Output](https://github.com/Aibier/go-common-libs/blob/master/rate-limiter.png)
+![Test Case Output](https://github.com/Aibier/go-common-libs/blob/main/rate-limiter.png)
 
 
 #### Authors:
